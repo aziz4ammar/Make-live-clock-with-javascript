@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #timer{
+            font-weight: bold;font-size: 50px;font-family: arial;text-align: center;
+        }
+    </style>
+</head>
+<body onload="horloge()">
+    <div id="timer"></div>
+    <script>
+        function horloge()
+        {
+            var tt=new Date().toLocaleTimeString();//hh:mm:ss
+            document.getElementById("timer").innerHTML=tt;
+            setTimeout(horloge,1000);
+        }
+    </script>
+</body>
+</html>
