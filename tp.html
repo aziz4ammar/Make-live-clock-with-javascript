@@ -8,14 +8,6 @@
             font-weight: bold;font-size: 50px;font-family: arial;text-align: center;
             display: flex;justify-content: center;
         }
-        #bor{
-            border-color: black;border: 20px;
-            border-style: solid;
-            width: 600px;
-            height: 500px;
-            margin-top: 100px;
-
-        }
         body{
             display: flex;
             justify-content: center;
@@ -40,7 +32,6 @@
     height: calc(100% + 10px);
     z-index: -1;
     animation: anim-moving-glow 20s linear infinite;
-  
 }
 
 @keyframes anim-moving-glow {
@@ -69,11 +60,6 @@
             var tt=new Date().toLocaleTimeString();//hh:mm:ss
             document.getElementById("timer").innerHTML=tt;
             setTimeout(horloge,1000);
-        }
-        function change()
-        {
-            document.getElementById("bor")
-
         }
     </script>
 </body>
