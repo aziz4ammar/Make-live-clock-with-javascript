@@ -5,13 +5,14 @@
     <title>Document</title>
     <style>
         #timer{
-            font-weight: bold;font-size: 50px;font-family: arial;text-align: center;
-            display: flex;justify-content: center;
+            font-weight: bold;font-size: 100px;font-family: arial;text-align: center;
+            display: flex;justify-content: center;margin-top: 150px;z-index: 999;color: #ffffff;
         }
         body{
             display: flex;
             justify-content: center;
             flex-direction: column;
+            background-color: #272727;
         }
         .block {
     position: relative;
@@ -53,8 +54,9 @@
     </style>
 </head>
 <body onload="horloge()">
-    <div id="timer"></div>
-    <div class="block moving-glow"></div>
+    <div class="block moving-glow">
+        <div id="timer"></div>
+    </div>
     <script>
         function horloge()
         {
